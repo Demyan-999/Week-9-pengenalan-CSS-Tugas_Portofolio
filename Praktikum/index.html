@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Build fast, responsive sites with Bootstrap.">
+    <title>Bootstrap · Build fast, responsive sites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple fixed-top" aria-label="Main navigation">
+      <div class="container py-2 px-4">
+        <a class="navbar-brand p-0" href="#home" aria-label="Bootstrap home">
+          <img class="brand-logo" src="assets/images/logo-white.svg" alt="Bootstrap">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#site-navigation"
+          aria-controls="site-navigation" aria-label="Open navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-purple" tabindex="-1" id="site-navigation" aria-labelledby="navigation-title">
+          <div class="offcanvas-header px-4 pb-0">
+            <h2 class="offcanvas-title fs-5 text-white" id="navigation-title">Bootstrap</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body pt-lg-0 px-4">
+            <hr class="d-lg-none border-white opacity-25">
+            <ul class="navbar-nav flex-row flex-wrap gap-lg-1">
+              <li class="nav-item col-6 col-lg-auto"><a class="nav-link active" aria-current="page" href="#home">Docs</a></li>
+              <li class="nav-item col-6 col-lg-auto"><a class="nav-link" href="#themes">Examples</a></li>
+              <li class="nav-item col-6 col-lg-auto"><a class="nav-link" href="#icons">Icons</a></li>
+              <li class="nav-item col-6 col-lg-auto"><a class="nav-link" href="#themes">Themes</a></li>
+              <li class="nav-item col-6 col-lg-auto"><a class="nav-link" href="#footer">Blog</a></li>
+            </ul>
+            <hr class="d-lg-none border-white opacity-25">
+            <ul class="navbar-nav flex-row flex-wrap gap-lg-1 ms-lg-auto">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="https://github.com/twbs/bootstrap" aria-label="Bootstrap on GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i><span class="ms-2 d-lg-none">GitHub</span>
+                </a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="https://twitter.com/getbootstrap" aria-label="Bootstrap on Twitter">
+                  <i class="bi bi-twitter" aria-hidden="true"></i><span class="ms-2 d-lg-none">Twitter</span>
+                </a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link" href="https://slack.bootstrap.com/" aria-label="Bootstrap on Slack">
+                  <i class="bi bi-slack" aria-hidden="true"></i><span class="ms-2 d-lg-none">Slack</span>
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-flex align-items-center" aria-hidden="true">
+                <span class="vr mx-2 text-white opacity-25"></span>
+              </li>
+              <li class="nav-item col-12 col-lg-auto">
+                <div class="dropdown" data-bs-theme="light">
+                  <button class="btn nav-link text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="d-lg-none">Bootstrap </span>v5.3
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><h3 class="dropdown-header">Bootstrap versions</h3></li>
+                    <li><a class="dropdown-item active" href="https://getbootstrap.com/docs/5.3/">Latest (5.3.x)</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.2/">v5.2</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/">v5.1</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">Previous releases</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item d-none d-lg-flex align-items-center" aria-hidden="true">
+                <span class="vr mx-2 text-white opacity-25"></span>
+              </li>
+              <li class="nav-item col-12 col-lg-auto">
+                <div class="dropdown" data-bs-theme="light">
+                  <button class="btn nav-link text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Choose color theme">
+                    <i class="bi bi-sun-fill" aria-hidden="true"></i><span class="d-lg-none ms-2">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><button class="dropdown-item theme-option" type="button" data-theme-value="light"><i class="bi bi-sun-fill me-2" aria-hidden="true"></i>Light</button></li>
+                    <li><button class="dropdown-item theme-option" type="button" data-theme-value="dark"><i class="bi bi-moon-stars-fill me-2" aria-hidden="true"></i>Dark</button></li>
+                    <li><button class="dropdown-item theme-option" type="button" data-theme-value="auto"><i class="bi bi-circle-half me-2" aria-hidden="true"></i>Auto</button></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero-section bg-body-tertiary">
+        <div class="container py-5 px-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-5 order-md-2">
+              <img class="img-fluid hero-art" src="assets/images/main.svg" alt="Bootstrap logo surrounded by interface components">
+            </div>
+            <div class="col-md-7 order-md-1">
+              <h1 class="mt-4 display-3 hero-title">Build fast, responsive sites with Bootstrap</h1>
+              <p class="fs-5 mt-3">
+                Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular
+                front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.
+              </p>
+              <div class="d-flex flex-column flex-md-row mt-4">
+                <a class="btn bg-purple text-white btn-lg mb-3 me-md-3 px-4 py-3" href="#icons">Get Started</a>
+                <a class="btn btn-outline-dark btn-lg mb-3 px-4 py-3 download-button" href="https://github.com/twbs/bootstrap/releases/latest">Download</a>
+              </div>
+              <p class="text-body-secondary mb-0">
+                Currently <strong>v5.3.3.</strong> ·
+                <a href="https://getbootstrap.com/docs/4.6/">v4.6.x docs</a> ·
+                <a href="https://github.com/twbs/bootstrap/releases">All releases</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="icons" class="showcase-section">
+        <div class="container py-5 px-4">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <div class="showcase-icon icon-yellow mb-3"><i class="bi bi-layers-fill" aria-hidden="true"></i></div>
+              <h2 class="display-5 showcase-title mb-3">Personalize it with Bootstrap Icons</h2>
+              <p class="fs-5">
+                <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> is an open source SVG icon library
+                featuring over 1,800 glyphs, with more added every release. They're designed to work in any project,
+                whether you use Bootstrap itself or not. Use them as SVGs or icon fonts—both options give you vector
+                scaling and easy customization via CSS.
+              </p>
+              <a class="icon-link icon-link-hover lead fw-semibold" href="https://icons.getbootstrap.com/">
+                Get Bootstrap Icons <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <img class="img-fluid showcase-art" src="assets/images/bs-icons.png" alt="A collection of Bootstrap icons surrounding the Bootstrap logo">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="themes" class="showcase-section">
+        <div class="container py-5 px-4">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <div class="showcase-icon icon-cyan mb-3"><i class="bi bi-droplet-fill" aria-hidden="true"></i></div>
+              <h2 class="display-5 showcase-title">Make it yours with official Bootstrap Themes</h2>
+              <p class="fs-5">
+                Take Bootstrap to the next level with premium themes from the
+                <a href="https://themes.getbootstrap.com/">official Bootstrap Themes marketplace</a>.
+                Themes are built on Bootstrap as their own extended frameworks, rich with new components and plugins,
+                documentation, and powerful build tools.
+              </p>
+              <a class="icon-link icon-link-hover lead fw-semibold" href="https://themes.getbootstrap.com/">
+                Browse Bootstrap Themes <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <img class="img-fluid showcase-art" src="assets/images/bs-themes.png" alt="A collection of Bootstrap theme previews">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="site-footer bg-body-tertiary">
+      <div class="container py-5 px-4">
+        <div class="row">
+          <div class="col-lg-3 mb-5">
+            <a class="footer-brand text-decoration-none" href="#home">
+              <img class="footer-logo" src="assets/images/logo-black.svg" alt="">
+              <span class="fs-5 ms-2">Bootstrap</span>
+            </a>
+            <p class="mt-2 text-body-secondary"><small>Designed and built with all the love in the world by the <a href="https://github.com/twbs">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</small></p>
+            <p class="mt-2 text-body-secondary"><small>Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</small></p>
+            <p class="mt-2 text-body-secondary"><small>Currently v5.3.3.</small></p>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-5">
+            <h2 class="h5">Links</h2>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#home">Home</a></li><li><a href="https://getbootstrap.com/docs/5.3/">Docs</a></li>
+              <li><a href="#themes">Examples</a></li><li><a href="#icons">Icons</a></li>
+              <li><a href="#themes">Themes</a></li><li><a href="https://blog.getbootstrap.com/">Blog</a></li>
+              <li><a href="https://store.getbootstrap.com/">Swag Store</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-5">
+            <h2 class="h5">Guides</h2>
+            <ul class="list-unstyled footer-links">
+              <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Getting started</a></li>
+              <li><a href="https://getbootstrap.com/docs/5.3/examples/starter-template/">Starter template</a></li>
+              <li><a href="https://getbootstrap.com/docs/5.3/getting-started/webpack/">Webpack</a></li>
+              <li><a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/">Parcel</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-5">
+            <h2 class="h5">Projects</h2>
+            <ul class="list-unstyled footer-links">
+              <li><a href="https://getbootstrap.com/">Bootstrap 5</a></li><li><a href="https://getbootstrap.com/docs/4.6/">Bootstrap 4</a></li>
+              <li><a href="https://icons.getbootstrap.com/">Icons</a></li><li><a href="https://github.com/twbs/rfs">RFS</a></li>
+              <li><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-5">
+            <h2 class="h5">Community</h2>
+            <ul class="list-unstyled footer-links">
+              <li><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li><li><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+              <li><a href="https://opencollective.com/bootstrap">Corporate sponsors</a></li><li><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+              <li><a href="https://slack.bootstrap.com/">Slack</a></li><li><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        const themeStorageKey = "bootstrap-clone-theme";
+        const themeButtons = document.querySelectorAll("[data-theme-value]");
+        const colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        function applyTheme(selection) {
+          const theme = selection === "auto" ? (colorScheme.matches ? "dark" : "light") : selection;
+          document.documentElement.setAttribute("data-bs-theme", theme);
+          themeButtons.forEach((button) => {
+            button.classList.toggle("active", button.dataset.themeValue === selection);
+          });
+        }
+
+        const savedTheme = localStorage.getItem(themeStorageKey) || "light";
+        applyTheme(savedTheme);
+
+        themeButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const selection = button.dataset.themeValue;
+            localStorage.setItem(themeStorageKey, selection);
+            applyTheme(selection);
+          });
+        });
+
+        colorScheme.addEventListener("change", () => {
+          if (localStorage.getItem(themeStorageKey) === "auto" || !localStorage.getItem(themeStorageKey)) {
+            applyTheme("auto");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-labelledby="title">
+  <title id="title">Bootstrap interface illustration</title>
+  <defs>
+    <linearGradient id="brand" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#8d18ff"/>
+      <stop offset="1" stop-color="#6610f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#6610f2" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-width="5">
+    <path stroke="#0dcaf0" d="M94 118v-44q0-12 12-12h124q12 0 12 12v45h73"/>
+    <path stroke="#0d6efd" d="M384 67h148q12 0 12 12v112q0 12-12 12h-91"/>
+    <path stroke="#dc3545" d="M468 260h105q10 0 10 10t-10 10H458"/>
+    <path stroke="#ffbf00" d="M69 362h126v40h68"/>
+    <path stroke="#6c757d" d="M47 222h117l19 18 18-18h45"/>
+    <path stroke="#d7dce2" d="M389 393h159q11 0 11 11v51q0 11-11 11H436l-20 17v-17h-27q-11 0-11-11v-51q0-11 11-11z"/>
+  </g>
+  <g fill="#0d6efd">
+    <circle cx="92" cy="292" r="8"/><circle cx="121" cy="292" r="8" fill="none" stroke="#0d6efd" stroke-width="4"/>
+    <rect x="143" y="284" width="17" height="17" rx="4"/><path d="m147 292 4 4 8-9" fill="none" stroke="#fff" stroke-width="2.5"/>
+  </g>
+  <g fill="#fff" stroke="#0d6efd" stroke-width="4"><rect x="169" y="284" width="17" height="17" rx="4"/></g>
+  <g filter="url(#shadow)" transform="rotate(-13 340 260)">
+    <path fill="url(#brand)" d="M242 113q0-28 28-28h137q28 0 28 28v22q0 26 26 26h10v190h-10q-26 0-26 26v22q0 28-28 28H270q-28 0-28-28v-22q0-26-26-26h-10V161h10q26 0 26-26z"/>
+    <path fill="#fff" d="M304 166h56q43 0 43 34 0 23-22 32 30 8 30 36 0 40-51 40h-56zm34 26v31h16q17 0 17-16 0-15-17-15zm0 57v32h20q20 0 20-16t-20-16z"/>
+  </g>
+  <g fill="#fff">
+    <rect x="88" y="88" width="64" height="7" rx="3.5"/>
+    <rect x="437" y="159" width="73" height="7" rx="3.5"/>
+    <rect x="86" y="379" width="44" height="8" rx="4"/>
+    <rect x="500" y="415" width="45" height="7" rx="3.5"/>
+  </g>
+</svg>

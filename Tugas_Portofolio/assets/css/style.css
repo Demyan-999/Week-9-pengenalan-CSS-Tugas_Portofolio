@@ -1,0 +1,272 @@
+:root {
+  --color-slate: #0f172a;
+  --color-blue: #2563eb;
+  --color-light: #f8fafc;
+  --navbar-height: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: var(--navbar-height);
+  color: #1e293b;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.site-navbar {
+  min-height: var(--navbar-height);
+  background-color: var(--color-slate);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.04em;
+}
+
+.navbar-nav {
+  gap: 0.4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+  transition: color 0.2s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+
+.section-anchor {
+  scroll-margin-top: var(--navbar-height);
+}
+
+.hero-section {
+  display: flex;
+  min-height: min(720px, calc(100vh - var(--navbar-height)));
+  align-items: center;
+  padding: 5rem 0;
+  color: #fff;
+  background-color: var(--color-slate);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  border-radius: 999px;
+  color: #bfdbfe;
+  background-color: rgba(37, 99, 235, 0.12);
+  font-size: 0.9rem;
+}
+
+.hero-section h1 {
+  max-width: 700px;
+  letter-spacing: -0.045em;
+}
+
+.hero-tagline {
+  max-width: 690px;
+  color: #cbd5e1;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.hero-description {
+  color: #94a3b8;
+  font-size: 1.05rem;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-blue);
+  --bs-btn-border-color: var(--color-blue);
+  --bs-btn-hover-bg: #1d4ed8;
+  --bs-btn-hover-border-color: #1d4ed8;
+  --bs-btn-active-bg: #1e40af;
+  --bs-btn-active-border-color: #1e40af;
+}
+
+.profile-image {
+  display: block;
+  width: min(100%, 340px);
+  height: 360px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: #0f172a;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.section-copy {
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.section-subtitle {
+  color: #64748b;
+}
+
+.section-copy,
+.hero-tagline,
+.hero-description,
+.skill-list,
+.project-card p,
+.education-item p,
+.contact-copy,
+.modal-body {
+  text-align: justify;
+}
+
+.skill-card,
+.project-card {
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.1) !important;
+}
+
+.skill-icon {
+  color: var(--color-blue);
+  font-size: 2rem;
+}
+
+.skill-list {
+  padding-left: 1.15rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.skill-list li + li {
+  margin-top: 0.65rem;
+}
+
+.project-mark {
+  display: inline-grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  place-items: center;
+  border-radius: 0.9rem;
+  color: var(--color-blue);
+  background-color: #eff6ff;
+  font-size: 1.5rem;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-card .btn {
+  margin-top: auto;
+}
+
+.education-list {
+  border-left: 2px solid #dbeafe;
+}
+
+.education-item {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0 0 2rem 1.75rem;
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+}
+
+.education-icon {
+  position: absolute;
+  top: 0;
+  left: -1.15rem;
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border: 3px solid var(--color-light);
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--color-blue);
+}
+
+.contact-section {
+  padding: 5.5rem 0;
+  color: #fff;
+  background-color: var(--color-slate);
+}
+
+.contact-section .section-title {
+  margin-bottom: 0;
+}
+
+.contact-copy {
+  color: #cbd5e1;
+}
+
+.site-footer {
+  padding: 1.25rem 0;
+  color: #94a3b8;
+  background-color: var(--color-slate);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 0.75rem 0 1rem;
+  }
+
+  .navbar-nav {
+    gap: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.6rem;
+  }
+
+  .profile-image {
+    height: 280px;
+  }
+
+  .section-padding {
+    padding: 4.5rem 0;
+  }
+
+  .contact-section {
+    padding: 4.5rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
