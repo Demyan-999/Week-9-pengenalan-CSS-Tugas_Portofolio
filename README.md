@@ -7,5 +7,4 @@ Repository untuk tugas dan praktikum mata kuliah **Perancangan Aplikasi Web** (W
 - **[`Praktikum/`](./Praktikum/)**: Hasil implementasi modul praktikum Bootstrap 5.
 
 ## 🚀 Live Demo (GitHub Pages)
-Halaman portofolio dapat diakses secara online melalui GitHub Pages setelah diaktifkan di pengaturan repositori.
-- **[`Page Portofolio`](https://demyan-999.github.io/Week-9-pengenalan-CSS-Tugas_Portofolio/Tugas_Portofolio/)**
+- **[`Page Portofolio`](https://demyan-999.github.io/Week-9-pengenalan-CSS-Tugas_Portofolio/Tugas_Portofolio/)**: Halaman portofolio dapat diakses secara online melalui GitHub Pages setelah diaktifkan di pengaturan repositori.
